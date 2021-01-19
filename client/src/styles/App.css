@@ -1,0 +1,23 @@
+.App {
+  height: 100%;
+}
+
+.App-content {
+  padding: 0 50px;
+  height: 100%;
+}
+
+.App-logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.App-view {
+  margin-top: 50px;
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+}
