@@ -10,8 +10,8 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use('/api/pizzas', pizzas);
-app.use('/api/user', users);
+app.use('/pizzas', pizzas);
+app.use('/user', users);
 
 app.use((req, res, next) => {
   const err = new Error('Not Found');
