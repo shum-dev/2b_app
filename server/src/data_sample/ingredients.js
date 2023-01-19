@@ -1,10 +1,10 @@
 module.exports = [
-  { name: 'Сыр' },
-  { name: 'Грибы' },
-  { name: 'Перец' },
-  { name: 'Помидор' },
-  { name: 'Оливки' },
-  { name: 'Ветчина' },
-  { name: 'Лук' },
-  { name: 'Соус' },
+  { name: 'Cheese' },
+  { name: 'Mashrooms' },
+  { name: 'Pepper' },
+  { name: 'Tomatos' },
+  { name: 'Olives' },
+  { name: 'Bacon' },
+  { name: 'Onion' },
+  { name: 'Sauce' },
 ];

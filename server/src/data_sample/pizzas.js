@@ -1,32 +1,32 @@
 module.exports = [
   {
-    name: 'Пица №1',
-    pastry: 'Среднее',
+    name: 'Pizza #1',
+    pastry: 'Medium',
     author: 'default',
     ingredients: [
-      'Грибы',
-      'Лук',
-      'Соус',
+      'Mashrooms',
+      'Onion',
+      'Sauce',
     ],
   },
   {
-    name: 'Пица №2',
-    pastry: 'Тонкое',
+    name: 'Pizza #2',
+    pastry: 'Thin',
     author: 'default',
     ingredients: [
-      'Сыр',
-      'Перец',
-      'Помидор',
+      'Cheese',
+      'Pepper',
+      'Tomatos',
     ],
   },
   {
-    name: 'Пица №3',
-    pastry: 'Толстое',
+    name: 'Pizza #3',
+    pastry: 'Thick',
     author: 'default',
     ingredients: [
-      'Оливки',
-      'Ветчина',
-      'Лук',
+      'Olives',
+      'Bacon',
+      'Onion',
     ],
   },
 ];

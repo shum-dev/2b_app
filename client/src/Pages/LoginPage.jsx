@@ -41,8 +41,8 @@ const LoginPage = () => {
         label="Email"
         name="email"
         rules={[
-          { required: true, message: 'Поле обязятельное' },
-          { type: 'email', message: 'Неверный формат' },
+          { required: true, message: 'Required' },
+          { type: 'email', message: 'wrong format' },
         ]}
       >
         <Input />
@@ -51,17 +51,17 @@ const LoginPage = () => {
         label="Password"
         name="password"
         rules={[
-          { required: true, message: 'Поле обязятельное' },
+          { required: true, message: 'Required' },
         ]}
       >
         <Input.Password />
       </Form.Item>
       <Form.Item style={{ textAlign: 'center' }}>
         <Button type="primary" htmlType="submit">
-          Войти
+          Login
         </Button>
         <div>
-          <Link to="/register">Зарегистрироваться!</Link>
+          <Link to="/register">Signup!</Link>
         </div>
 
       </Form.Item>

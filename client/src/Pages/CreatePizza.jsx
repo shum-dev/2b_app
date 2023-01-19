@@ -27,27 +27,27 @@ const CreatePizza = () => {
         onFinish={(fields) => {
           createPizza(fields)
             .then(() => {
-              message.success('Пицца создана');
+              message.success('Pizza created');
               form.resetFields();
             })
             .catch((e) => message.error(e.message));
         }}
       >
         <Form.Item
-          label="Наименование"
+          label="Name"
           name="name"
           rules={[
-            { required: true, message: 'Поле обязательное' },
+            { required: true, message: 'Required' },
           ]}
         >
           <Input />
         </Form.Item>
 
         <Form.Item
-          label="Тесто"
+          label="Pastry"
           name="pastry"
           rules={[
-            { required: true, message: 'Поле обязательное' },
+            { required: true, message: 'Required' },
           ]}
         >
           <Radio.Group>
@@ -59,10 +59,10 @@ const CreatePizza = () => {
 
         <Form.Item
           name="ingredients"
-          label="Ингредиенты"
-          rules={[{ required: true, message: 'Поле обязательное', type: 'array' }]}
+          label="Ingredients"
+          rules={[{ required: true, message: 'Required', type: 'array' }]}
         >
-          <Select mode="multiple" placeholder="Выберите выши любимые ингредиенты">
+          <Select mode="multiple" placeholder="Select your favorite">
             {data.ingredients.map((item) => (
               <Select.Option key={uniqid.time()} value={item.name}>{item.name}</Select.Option>
             ))}
@@ -70,7 +70,7 @@ const CreatePizza = () => {
         </Form.Item>
 
         <Form.Item>
-          <Button htmlType="submit">Создать</Button>
+          <Button htmlType="submit">Create</Button>
         </Form.Item>
       </Form>
     </Spin>

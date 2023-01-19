@@ -9,7 +9,7 @@ import { routes } from './routes';
 export const Switcher = () => {
   const { user } = useContext(AuthContext);
   return (
-    <Suspense fallback={<div>Загрузка...</div>}>
+    <Suspense fallback={<div>Loading...</div>}>
       <Switch>
         {routes.map(({
           path, component: Component, privateRoute, locked,
@@ -20,10 +20,10 @@ export const Switcher = () => {
             path={path}
             render={(props) => {
               if (locked && !user?.isAdmin) {
-                return <Redirect to={{ pathname: '/login', state: { error: 'Только для админов', path } }} />;
+                return <Redirect to={{ pathname: '/login', state: { error: 'For Admins Only', path } }} />;
               }
               if (privateRoute && !user) {
-                return <Redirect to={{ pathname: '/login', state: { error: 'Только для зарегистрированных', path } }} />;
+                return <Redirect to={{ pathname: '/login', state: { error: 'You need to be authorized', path } }} />;
               }
               return <Component {...props} />;
             }}

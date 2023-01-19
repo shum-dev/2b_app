@@ -33,8 +33,8 @@ const RegisterPage = () => {
         label="Email"
         name="email"
         rules={[
-          { required: true, message: 'Поле обязятельное' },
-          { type: 'email', message: 'Неверный формат' },
+          { required: true, message: 'Required' },
+          { type: 'email', message: 'Wrong format' },
         ]}
       >
         <Input />
@@ -43,17 +43,17 @@ const RegisterPage = () => {
         label="Password"
         name="password"
         rules={[
-          { required: true, message: 'Поле обязятельное' },
+          { required: true, message: 'Required' },
         ]}
       >
         <Input.Password />
       </Form.Item>
       <Form.Item style={{ textAlign: 'center' }}>
         <Button type="primary" htmlType="submit">
-          Зарегистрироваться
+          Signup
         </Button>
         <div>
-          <Link to="/login">У меня есть аккаунт!</Link>
+          <Link to="/login">I have an account!</Link>
         </div>
 
       </Form.Item>

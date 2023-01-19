@@ -25,20 +25,20 @@ const PizzaList = () => {
       pagination={false}
     >
       <Column
-        title="Наименование"
+        title="Name"
         dataIndex="name"
       />
       <Column
-        title="Тесто"
+        title="Pastry"
         dataIndex="pastry"
       />
       <Column
-        title="Тесто"
+        title="Ingredients"
         dataIndex="ingredients"
         render={(val) => val.join(', ')}
       />
       <Column
-        title="Автор"
+        title="Author"
         dataIndex="author"
         render={(val) => (val === 'default' ? '-' : val)}
       />

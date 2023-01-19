@@ -1,5 +1,5 @@
 module.exports = [
-  { name: 'Тонкое' },
-  { name: 'Среднее' },
-  { name: 'Толстое' },
+  { name: 'Thin' },
+  { name: 'Medium' },
+  { name: 'Thick' },
 ];

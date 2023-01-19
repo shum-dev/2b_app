@@ -29,17 +29,20 @@ export const Header = () => {
 
   return (
     <Layout.Header>
-      <div className="App-logo" />
+      <div className="App-logo">
+        {user && <div>{user.email}</div>}
+      </div>
       <Menu theme="dark" mode="horizontal" selectedKeys={selected}>
         <Menu.Item key="1">
-          <Link to="/">Главная</Link>
+          <Link to="/">Home</Link>
         </Menu.Item>
         <Menu.Item key="2">
-          <Link to="/pizzas/create">Создать пиццу</Link>
+          <Link to="/pizzas/create">Create Pizza</Link>
         </Menu.Item>
         <Menu.Item key="3">
-          <Link to="/pizzas">Список пицц</Link>
+          <Link to="/pizzas">Pizza List</Link>
         </Menu.Item>
+
         {user ? (
           <Menu.Item key="5">
             <Button
@@ -57,15 +60,14 @@ export const Header = () => {
                   .catch((e) => message.error(e.message));
               }}
             >
-              Выйти
+              Logout
             </Button>
           </Menu.Item>
         ) : (
           <Menu.Item key="4">
-            <Link to="/login">Войти</Link>
+            <Link to="/login">Login</Link>
           </Menu.Item>
         )}
-        {user && <span>{user.email}</span>}
       </Menu>
     </Layout.Header>
   );
