@@ -7,12 +7,12 @@ const hashPassword = async (password) => {
 
 module.exports = async () => ([
   {
-    email: 'admin@admin.ru',
+    email: 'admin@admin.com',
     password: await hashPassword('admin'),
     isAdmin: true,
   },
   {
-    email: 'test@test.ru',
+    email: 'test@test.com',
     password: await hashPassword('test'),
   },
 ]);
