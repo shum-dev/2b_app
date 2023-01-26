@@ -63,6 +63,11 @@ const LoginPage = () => {
         <div>
           <Link to="/register">Signup!</Link>
         </div>
+        <small>
+          Quick Admin Access: admin@admin.com
+          <br />
+          Password: admin
+        </small>
 
       </Form.Item>
     </Form>
