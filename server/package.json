@@ -14,7 +14,7 @@
     "mongodb": "^3.6.3"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "devDependencies": {
     "eslint": "^7.18.0",
